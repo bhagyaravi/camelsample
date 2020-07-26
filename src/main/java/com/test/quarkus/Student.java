@@ -12,7 +12,21 @@ public class Student {
 private long studentId;
 private String name;
 private String subject;
+private int percentage;
  
+
+public long getStudentId() {
+	return studentId;
+}
+
+
+public int getPercentage() {
+	return percentage;
+}
+
+public void setPercentage(int percentage) {
+	this.percentage = percentage;
+}
 
 public Student(long id,String name, String subject) {
 this.studentId = id;
@@ -24,6 +38,15 @@ public long getId() {
 return studentId;
 }
  
+public Student(long studentId, String name, String subject, int percentage) {
+	super();
+	this.studentId = studentId;
+	this.name = name;
+	this.subject = subject;
+	this.percentage = percentage;
+}
+
+
 public Student() {
 	super();
 	// TODO Auto-generated constructor stub
