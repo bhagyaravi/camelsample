@@ -34,8 +34,8 @@ public class OrchestratorApplication {
 	public void init() {
 		List<Student> list = new ArrayList<>();
 
-		list.add(new Student(1234,"Bhagya", "Maths"));
-		list.add(new Student(5678,"Geetha", "Physics"));
+		list.add(new Student(1234,"Bhagya", "Maths", 80));
+		list.add(new Student(5678,"Geetha", "Physics", 85));
 
 		studentRepository.saveAll(list);
 	}
